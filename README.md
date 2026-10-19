@@ -1,6 +1,6 @@
 # Chevin - Legal Documents
 
-Benvenuto. Qui puoi trovare la documentazione legale dell'app Chevin:
+Welcome. Here you can find the legal documentation for the Chevin app:
 
 * [Privacy Policy](privacy.html)
 * [Terms of Service](terms.html)
