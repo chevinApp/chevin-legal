@@ -1,48 +1,64 @@
 # Open Source Licenses
 
-**Last updated: October 2026**
+**Last updated: October 25, 2026**
 
-Chevin is made possible by the incredible work of the open-source community and relies on the following third-party libraries. We gratefully acknowledge the developers and organizations behind these projects.
+Chevin is made possible by the work of the open-source community and relies on the following third-party software and assets. We gratefully acknowledge the developers and organizations behind these projects.
 
-### 1. Android Open Source Project (AOSP) & Jetpack
-The foundational architecture, UI components (Jetpack Compose), navigation, local database (Room), and background work management are provided by Google via the Android Open Source Project and AndroidX.
-* **Libraries used:** `androidx.compose`, `androidx.room`, `androidx.lifecycle`, `androidx.datastore`, `androidx.core`, `androidx.activity`.
+### 1. Android Jetpack (AndroidX)
+UI (Jetpack Compose, Material 3, Material Icons), navigation, lifecycle and ViewModel, local database (Room), preferences storage (DataStore), image metadata (ExifInterface) and core Android utilities.
+* **Libraries used:** `androidx.compose` (ui, material3, material-icons), `androidx.activity`, `androidx.core`, `androidx.lifecycle`, `androidx.navigation`, `androidx.hilt:hilt-navigation-compose`, `androidx.room`, `androidx.datastore`, `androidx.exifinterface`.
 * **License:** [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+* **Copyright:** © The Android Open Source Project.
 
 ### 2. TensorFlow Lite
-Used for local on-device machine learning inference (aesthetic scoring and feature extraction).
+On-device machine learning inference (aesthetic scoring and feature extraction).
 * **Libraries used:** `org.tensorflow:tensorflow-lite`, `tensorflow-lite-support`, `tensorflow-lite-gpu`.
 * **License:** [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
-* **Copyright:** © Google LLC.
+* **Copyright:** © The TensorFlow Authors.
 
 ### 3. Google ML Kit (Face Detection)
-Used locally to detect faces within photos, ensuring portraits are analyzed correctly without transmitting biometric data externally.
+On-device face detection, so that portraits are analyzed correctly. Photos are never sent to Google; see the [Privacy Policy](privacy.html) for the technical diagnostic data ML Kit sends.
 * **Libraries used:** `com.google.mlkit:face-detection`.
-* **Terms of Service:** Governed by the [Google APIs Terms of Service](https://developers.google.com/terms) and [ML Kit Terms of Service](https://developers.google.com/ml-kit/terms).
+* **Terms:** [ML Kit Terms of Service](https://developers.google.com/ml-kit/terms) and [Google APIs Terms of Service](https://developers.google.com/terms).
 
 ### 4. OpenCV (Open Source Computer Vision Library)
-Used for advanced image processing, matrix manipulation, Laplacian variance (blur detection), and feature matching (ORB).
+Image processing: blur detection (Laplacian variance), exposure analysis and feature matching (ORB) for duplicate detection.
 * **Library used:** OpenCV SDK for Android.
 * **License:** [Apache License 2.0](https://opencv.org/license/)
+* **Copyright:** © OpenCV team and contributors.
 
 ### 5. Dagger Hilt
-Used for Dependency Injection.
+Dependency injection.
 * **Libraries used:** `com.google.dagger:hilt-android`.
 * **License:** [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 * **Copyright:** © The Dagger Authors.
 
-### 6. Coil (Coroutine Image Loader)
-Used for fast, lightweight asynchronous image loading and caching within Jetpack Compose.
+### 6. Coil
+Asynchronous image loading in Jetpack Compose.
 * **Library used:** `io.coil-kt:coil-compose`.
 * **License:** [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+* **Copyright:** © Coil Contributors.
 
-### 7. Kotlin & Coroutines
-The core programming language and concurrency framework.
-* **Libraries used:** `org.jetbrains.kotlin`, `kotlinx-coroutines`.
+### 7. Kotlin and Kotlin Coroutines
+Programming language and concurrency framework.
+* **Libraries used:** Kotlin standard library, `kotlinx-coroutines` (including `kotlinx-coroutines-play-services`).
 * **License:** [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
-* **Copyright:** © JetBrains s.r.o.
+* **Copyright:** © JetBrains s.r.o. and Kotlin Programming Language contributors.
+
+### 8. NIMA aesthetic model
+The aesthetic score is computed by a NIMA (Neural Image Assessment) model based on MobileNet, converted to TensorFlow Lite.
+* **Source:** [SOURCE OF THE MODEL – to be completed]
+* **License:** [LICENSE OF THE MODEL – to be completed]
+
+### 9. Plus Jakarta Sans (font)
+The typeface used throughout the app.
+* **License:** [SIL Open Font License 1.1](https://openfontlicense.org/open-font-license-official-text/)
+* **Copyright:** © 2020 The Plus Jakarta Sans Project Authors ([github.com/tokotype/PlusJakartaSans](https://github.com/tokotype/PlusJakartaSans)).
+
+### 10. Sound effects
+* **Source and license:** [SOURCE AND LICENSE OF tap.ogg, pop.ogg, end_scan.ogg – to be completed]
 
 ---
 
-### Standard Apache 2.0 License Text
-*Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.*
+### Apache License 2.0
+Libraries under the Apache License 2.0 are distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. The full text of the license is available at [apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0).
