@@ -47,8 +47,9 @@ Programming language and concurrency framework.
 
 ### 8. NIMA aesthetic model
 The aesthetic score is computed by a NIMA (Neural Image Assessment) model based on MobileNet, converted to TensorFlow Lite.
-* **Source:** [SOURCE OF THE MODEL – to be completed]
-* **License:** [LICENSE OF THE MODEL – to be completed]
+* **Source:** [idealo/image-quality-assessment](https://github.com/idealo/image-quality-assessment), pretrained aesthetic weights `weights_mobilenet_aesthetic_0.07.hdf5`, converted by us to TensorFlow Lite.
+* **License:** [Apache License 2.0](https://github.com/idealo/image-quality-assessment/blob/master/LICENSE)
+* **Copyright:** © idealo image-quality-assessment authors. Based on "NIMA: Neural Image Assessment" (Talebi & Milanfar, 2018) and the MobileNet architecture.
 
 ### 9. Plus Jakarta Sans (font)
 The typeface used throughout the app.
@@ -56,7 +57,11 @@ The typeface used throughout the app.
 * **Copyright:** © 2020 The Plus Jakarta Sans Project Authors ([github.com/tokotype/PlusJakartaSans](https://github.com/tokotype/PlusJakartaSans)).
 
 ### 10. Sound effects
-* **Source and license:** [SOURCE AND LICENSE OF tap.ogg, pop.ogg, end_scan.ogg – to be completed]
+Tap, pop and end-of-analysis sounds.
+* **"Bubble Pop 06"** by Universfield, from [Pixabay](https://pixabay.com/sound-effects/search/univer%20buble%20pop/).
+* **"UI Chime Success"** by Sound Shelf Studio, from [Pixabay](https://pixabay.com/sound-effects/search/sound%20shelf%20studio%20ui%20success/).
+* **"Soft App Button Tap Sound 3"** by vadim_makes_sound, from [Pixabay](https://pixabay.com/sound-effects/search/vadim_makes_sound-soft-app-button-tap-sound-/).
+* **License:** [Pixabay Content License](https://pixabay.com/service/license-summary/) (free to use in apps, no attribution required; credited here as thanks).
 
 ---
 
