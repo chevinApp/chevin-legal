@@ -30,7 +30,7 @@ The app stores on your device only:
 * your preferences (language, theme, sound volume, tutorial status);
 * the personal taste model, built from the choices you correct, so that future suggestions match your taste.
 
-We never receive this data. If you have turned on Android's automatic backup, the system may include it in the encrypted backup of your Google account, as it does for other apps. You can delete it at any time from the app's settings (clear cache and history), by clearing the app's data in the system settings, or by uninstalling the app.
+This data never leaves your device: we never receive it, and it is excluded from Android backups and device-to-device transfers. You can delete it at any time from the app's settings (clear cache and history), by clearing the app's data in the system settings, or by uninstalling the app.
 
 **6. Children**
 Chevin is not directed at children under 13 and does not knowingly collect personal information from anyone.
